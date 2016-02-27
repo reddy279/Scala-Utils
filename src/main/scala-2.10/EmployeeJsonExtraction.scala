@@ -6,7 +6,7 @@ import org.json4s.jackson.JsonMethods._
 case class EmployeeDepartments(DptId:String,DptName :String)
 case class EmployeeAddresses(City:String,State:String)
 case class Employee(employeeName:String,employeeId:String,employeeDepartments:List[EmployeeDepartments],employeeAddresses:List[EmployeeAddresses])
-case class Employees(employees:List[Employee])
+case class EmployeeList(employees:List[Employee])
 
 
 
@@ -19,13 +19,13 @@ object EmployeeJsonExtraction extends App{
 
 
   val jsonString=Source.fromFile("/Users/shashidharsreddy/Scala-Utils/src/main/resources/employeeDetails.json").mkString
-  val parsed=parse(jsonString).extract[Employees]
+  val parsed=parse(jsonString).extract[EmployeeList]
  // println(parsed)
 
-   if (parsed.isInstanceOf[Employees]) {
-     val empees: Employees = parsed.asInstanceOf[Employees]
+   if (parsed.isInstanceOf[EmployeeList]) {
+     val empList: EmployeeList = parsed.asInstanceOf[EmployeeList]
 
-     empees.employees.foreach(p => {
+     empList.employees.foreach(p => {
        val empName = p.employeeName
        val empId = p.employeeId
        println("Employee Name : " + empName + " Employee Id : " + empId + "\n")
