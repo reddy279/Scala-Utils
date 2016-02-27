@@ -1,0 +1,16 @@
+{
+  "name"      :"Shashi",
+  "address"   :{
+                "street" : "Alpharetta",
+                "city"   : "Atlanta"
+                },
+  "children" : [{
+                 "name" : "Chinni",
+                 "age" : 5,
+                 "birthdate":"2004-09-04T18:06:22Z"
+                },{
+                  "name" : "Bujji",
+                  "age" : 10
+
+                 }]
+}

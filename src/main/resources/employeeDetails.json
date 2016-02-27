@@ -1,0 +1,60 @@
+{
+  "employees": [
+    {
+      "employeeName": "Shashi",
+      "employeeId": "ABC123",
+      "employeeDepartments": [
+        {
+          "DptId": "Dpt1",
+          "DptName": "Java Technology"
+        },
+        {
+          "DptId": "Dpt2",
+          "DptName": "Scala Technology"
+        },
+        {
+          "DptId": "Dpt3",
+          "DptName": "Spark Technology"
+        }
+      ],
+      "employeeAddresses": [
+        {
+          "City": "Alpharetta",
+          "State": "GA"
+        },
+        {
+          "City": "Boston",
+          "State": "MA"
+        }
+      ]
+    },
+    {
+      "employeeName": "Vijay",
+      "employeeId": "XYZ123",
+      "employeeDepartments": [
+        {
+          "DptId": "Dpt1",
+          "DptName": "Cloud Technology"
+        },
+        {
+          "DptId": "Dpt2",
+          "DptName": "Oracle Technology"
+        },
+        {
+          "DptId": "Dpt3",
+          "DptName": "Spark Technology"
+        }
+      ],
+      "employeeAddresses": [
+        {
+          "City": "Seatle",
+          "State": "WA"
+        },
+        {
+          "City": "New York",
+          "State": "NY"
+        }
+      ]
+    }
+  ]
+}
